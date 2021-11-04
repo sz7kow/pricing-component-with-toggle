@@ -1,0 +1,59 @@
+.card
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 100%
+  max-width: 350px
+  padding: 31px 24px
+  border-radius: 10px
+  box-shadow: 0px 20px 40px rgba($color-soap, 0.5)
+  @media (min-width: $breakpoint-desktop)
+    width: 350px
+
+.card:first-child
+  @media (min-width: $breakpoint-desktop)
+    border-radius: 10px 0px 0px 10px
+
+.card:last-child
+  @media (min-width: $breakpoint-desktop)
+    border-radius: 0px 10px 10px 0px
+
+.card--primary
+  padding-top: 32px
+  color: $color-white
+  background: linear-gradient(135.06deg, $color-maximum-blue-purple -0.05%, $color-violet-blue 100.05%)
+  @media (min-width: $breakpoint-desktop)
+    padding: 55px 31px
+
+.card--secondary
+  color: $color-independence
+  background-color: $color-white
+  @media (min-width: $breakpoint-desktop)
+    margin-top: 24px
+    padding: 31px
+
+.card + > .card
+  margin-top: 32px
+  @media (min-width: $breakpoint-desktop)
+    margin-top: 0
+
+.card__plan-name
+  font: 700 18px/28px $font-family
+  margin-bottom: 24px
+
+.card__price
+  font: 700 71px/72px $font-family
+  display: flex
+  align-items: center
+  margin-bottom: 32px
+  letter-spacing: -2.16px
+
+.card__price::before
+  content: "$"
+  font: 700 40px/49px $font-family
+  display: inline-block
+  margin-right: 7.5px
+  letter-spacing: -1.2px
+  @media (min-width: $breakpoint-desktop)
+    margin-right: 8px

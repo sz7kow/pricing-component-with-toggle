@@ -1,0 +1,45 @@
+.switch
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.switch__label
+  font: 700 15px/28px $font-family
+  opacity: 0.5
+
+.switch__checkbox
+  overflow: hidden
+  position: relative
+  width: 56px
+  height: 32px
+  margin: 0 24px
+  border-radius: 32px
+  appearance: none
+  background: linear-gradient(135deg, $color-maximum-blue-purple 0%, $color-violet-blue 100%)
+  cursor: pointer
+  transition: 0.15s ease-in-out
+
+.switch__checkbox::before, .switch__checkbox::after
+  content: ""
+  position: absolute
+
+.switch__checkbox::before
+  z-index: 2
+  top: 4px
+  left: 4px
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  background-color: $color-white
+  transition: 0.15s ease-in-out
+
+.switch__checkbox:checked::before
+  transform: translateX(100%)
+
+.switch__checkbox:hover::after
+  z-index: 1
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: rgba($color-white, 0.5)
