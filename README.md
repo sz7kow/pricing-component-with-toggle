@@ -1,4 +1,4 @@
-# Frontend Mentor - Order summary component
+# Frontend Mentor - Pricing component with toggle
 
 This is a solution to the [Pricing component with toggle](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC) challenge on Frontend Mentor.
 
